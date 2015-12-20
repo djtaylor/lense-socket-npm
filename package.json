@@ -1,0 +1,25 @@
+{
+  "name": "lense-socket-npm",
+  "version": "1.0.0",
+  "description": "Node.js module for Lense Socket.io proxy API server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djtaylor/lense-socket-npm.git"
+  },
+  "keywords": [
+    "lense",
+    "socket.io",
+    "proxy",
+    "api"
+  ],
+  "author": "David Taylor <djtaylor13@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/djtaylor/lense-socket-npm/issues"
+  },
+  "homepage": "https://github.com/djtaylor/lense-socket-npm#readme"
+}
