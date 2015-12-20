@@ -16,6 +16,10 @@
     "proxy",
     "api"
   ],
+  "dependencies": {
+  	"winston": "latest",
+  	"socket.io": "latest"
+  },
   "author": "David Taylor <djtaylor13@gmail.com>",
   "license": "GPL-3.0",
   "bugs": {
