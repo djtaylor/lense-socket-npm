@@ -93,7 +93,7 @@ LenseSocket.prototype.cacheAPISupport = function(callback) {
 	var request_cache = require('http').request({
 			host:   config.engine.host,
 			port:   config.engine.port,
-			path:   '/support',
+			path:   '/handler/list',
 			method: 'GET',
 			headers: {
 				'Content-Type': 'application/json',
@@ -145,6 +145,12 @@ LenseSocket.prototype.apiSubmit = function(request) {
 		}
 	};
 
+	// Content length required for methods
+	if ((['PUT', 'POST'].indexOf(handler.method) > -1) && (request.hasOwnProperty('data'))) {
+		options.headers['Content-Length'] = Buffer.byteLength(JSON.stringify(request.data));
+	}
+	log.debug(options);
+	
 	// Callback specified
 	if ('callback' in request) {
 		options.headers['Lense-API-Callback'] = request.callback;
