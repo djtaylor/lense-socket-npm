@@ -18,7 +18,8 @@
   ],
   "dependencies": {
   	"winston": "latest",
-  	"socket.io": "latest"
+  	"socket.io": "latest",
+    "node-cache": "latest",
   },
   "author": "David Taylor <djtaylor13@gmail.com>",
   "license": "GPL-3.0",
